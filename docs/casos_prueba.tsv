@@ -1,0 +1,120 @@
+Caso	Entrada / acción	Esperado	Obtenido	Estado
+1	Fútbol sala cuota	600	600	OK
+2	Fútbol sala cotización de 4	2400	2400	OK
+3	Fútbol sala ingreso cobrado	2400	2400	OK
+4	Fútbol sala ingreso por disciplina	2400	2400	OK
+5	Fútbol sala finalización automática	FINALIZADO	FINALIZADO	OK
+6	Fútbol sala premio del 50%	1200.00	1200.00	OK
+7	Fútbol sala campeón disponible	true	true	OK
+8	Fútbol sala con penales cuota	750	750	OK
+9	Fútbol sala con penales cotización de 4	3000	3000	OK
+10	Fútbol sala con penales ingreso cobrado	3000	3000	OK
+11	Fútbol sala con penales ingreso por disciplina	3000	3000	OK
+12	Fútbol sala con penales finalización automática	FINALIZADO	FINALIZADO	OK
+13	Fútbol sala con penales premio del 50%	1500.00	1500.00	OK
+14	Fútbol sala con penales campeón disponible	true	true	OK
+15	Baloncesto cuota	500	500	OK
+16	Baloncesto cotización de 4	2000	2000	OK
+17	Baloncesto ingreso cobrado	2000	2000	OK
+18	Baloncesto ingreso por disciplina	2000	2000	OK
+19	Baloncesto finalización automática	FINALIZADO	FINALIZADO	OK
+20	Baloncesto premio del 50%	1000.00	1000.00	OK
+21	Baloncesto campeón disponible	true	true	OK
+22	Voleibol cuota	450	450	OK
+23	Voleibol cotización de 4	1800	1800	OK
+24	Voleibol ingreso cobrado	1800	1800	OK
+25	Voleibol ingreso por disciplina	1800	1800	OK
+26	Voleibol finalización automática	FINALIZADO	FINALIZADO	OK
+27	Voleibol premio del 50%	900.00	900.00	OK
+28	Voleibol campeón disponible	true	true	OK
+29	Relevos cuota	300	300	OK
+30	Relevos cotización de 3	900	900	OK
+31	Relevos ingreso cobrado	900	900	OK
+32	Relevos ingreso por disciplina	900	900	OK
+33	Relevos finalización automática	FINALIZADO	FINALIZADO	OK
+34	Relevos premio del 50%	450.00	450.00	OK
+35	Relevos campeón disponible	true	true	OK
+36	Fútbol 3-1	[3/2/1, 0/-2/0]	[3/2/1, 0/-2/0]	OK
+37	Fútbol empate 2-2	[1/0/0, 1/0/0]	[1/0/0, 1/0/0]	OK
+38	Fútbol derrota 0-2	[0/-2/0, 3/2/1]	[0/-2/0, 3/2/1]	OK
+39	Penales 2-2, tanda 4-3	[2/0/1, 1/0/0]	[2/0/1, 1/0/0]	OK
+40	Penales 0-0, tanda 3-4	[1/0/0, 2/0/1]	[1/0/0, 2/0/1]	OK
+41	Penales victoria reglamentaria 2-1	[3/1/1, 0/-1/0]	[3/1/1, 0/-1/0]	OK
+42	Baloncesto 80-75	[2/5/1, 1/-5/0]	[2/5/1, 1/-5/0]	OK
+43	Voleibol 3-0	[3/3/1, 0/-3/0]	[3/3/1, 0/-3/0]	OK
+44	Voleibol 3-1	[3/2/1, 0/-2/0]	[3/2/1, 0/-2/0]	OK
+45	Voleibol 3-2	[2/1/1, 1/-1/0]	[2/1/1, 1/-1/0]	OK
+46	Voleibol 2-3	[1/-1/0, 2/1/1]	[1/-1/0, 2/1/1]	OK
+47	Relevos puestos 1-8	[10/0/1, 8/0/0, 6/0/0, 5/0/0, 4/0/0, 3/0/0, 2/0/0, 1/0/0]	[10/0/1, 8/0/0, 6/0/0, 5/0/0, 4/0/0, 3/0/0, 2/0/0, 1/0/0]	OK
+48	Relevos DQ no ocupa lugar	[10/0/1, 8/0/0, 0/0/0]	[10/0/1, 8/0/0, 0/0/0]	OK
+49	Relevos todos DQ	[0/0/0, 0/0/0, 0/0/0]	[0/0/0, 0/0/0, 0/0/0]	OK
+50	Cotización sin cambios ni cobros	true	true	OK
+51	Cantidad cero (rechazo y estado intacto)	true	true	OK
+52	Cantidad negativa (rechazo y estado intacto)	true	true	OK
+53	Código participante repetido (p1) (rechazo y estado intacto)	true	true	OK
+54	Código participante vacío (rechazo y estado intacto)	true	true	OK
+55	Código torneo repetido (rechazo y estado intacto)	true	true	OK
+56	Código torneo vacío (rechazo y estado intacto)	true	true	OK
+57	Nombre vacío (rechazo y estado intacto)	true	true	OK
+58	Empresa vacía (rechazo y estado intacto)	true	true	OK
+59	Participante duplicado en torneo (rechazo y estado intacto)	true	true	OK
+60	Tercer participante de la misma empresa (rechazo y estado intacto)	true	true	OK
+61	Máximo de seis en baloncesto (rechazo y estado intacto)	true	true	OK
+62	Cierre sin mínimo (rechazo y estado intacto)	true	true	OK
+63	Sin campeón antes de finalizar	true	true	OK
+64	Seis inscritos generan quince encuentros	15	15	OK
+65	Cierre lleva a EN_JUEGO	EN_JUEGO	EN_JUEGO	OK
+66	Evento nuevo SIN_PROGRAMAR	SIN_PROGRAMAR	SIN_PROGRAMAR	OK
+67	Inscripción después de cerrar (rechazo y estado intacto)	true	true	OK
+68	Segundo cierre (rechazo y estado intacto)	true	true	OK
+69	Resultado sin programación (rechazo y estado intacto)	true	true	OK
+70	Hora 24 (rechazo y estado intacto)	true	true	OK
+71	Hora negativa (rechazo y estado intacto)	true	true	OK
+72	Sede vacía (rechazo y estado intacto)	true	true	OK
+73	Programación lleva a PROGRAMADO	PROGRAMADO	PROGRAMADO	OK
+74	Conflicto sede (rechazo y estado intacto)	true	true	OK
+75	Conflicto participante (rechazo y estado intacto)	true	true	OK
+76	Reprogramación conflictiva conserva fecha previa (rechazo y estado intacto)	true	true	OK
+77	Reprogramación válida	2026-12-03 12:00 | C	2026-12-03 12:00 | C	OK
+78	Baloncesto empatado 5-5 (rechazo y estado intacto)	true	true	OK
+79	Marcador negativo (rechazo y estado intacto)	true	true	OK
+80	Marcador fraccionario (rechazo y estado intacto)	true	true	OK
+81	Resultado lleva a FINALIZADO	FINALIZADO	FINALIZADO	OK
+82	Resultado repetido (rechazo y estado intacto)	true	true	OK
+83	Reprogramar finalizado (rechazo y estado intacto)	true	true	OK
+84	Carga seis participantes	6	6	OK
+85	Carga cinco torneos	5	5	OK
+86	Carga cuatro en juego	4	4	OK
+87	Carga sin ingresos	0	0	OK
+88	Carga sin premios	0	0	OK
+89	Desempate integrado por diferencia	P1	P1	OK
+90	Desempate integrado por victorias	true	true	OK
+91	Desempate por nombre	P1	P1	OK
+92	Ranking suma todas las tablas	true	true	OK
+93	Ranking empatado por nombre	Empresa 1	Empresa 1	OK
+94	Ranking orden descendente	true	true	OK
+95	Penales faltantes con empate (rechazo y estado intacto)	true	true	OK
+96	Penales empatados (rechazo y estado intacto)	true	true	OK
+97	Penales negativos (rechazo y estado intacto)	true	true	OK
+98	Penales sobrantes sin empate (rechazo y estado intacto)	true	true	OK
+99	Voleibol sin ganador con tres sets (rechazo y estado intacto)	true	true	OK
+100	Voleibol 3-3 (rechazo y estado intacto)	true	true	OK
+101	Voleibol cuatro sets (rechazo y estado intacto)	true	true	OK
+102	Conflicto participante entre torneos (rechazo y estado intacto)	true	true	OK
+103	Relevos tiempos iguales 50 y 50.0 (rechazo y estado intacto)	true	true	OK
+104	Relevos tiempo cero (rechazo y estado intacto)	true	true	OK
+105	Relevos tiempo negativo (rechazo y estado intacto)	true	true	OK
+106	Relevos resultado incompleto (rechazo y estado intacto)	true	true	OK
+107	Un solo evento en relevos	1	1	OK
+108	Relevos cierre automático	FINALIZADO	FINALIZADO	OK
+109	Torneo nuevo finalizado paga premio	600.00	600.00	OK
+110	Relevos precargado finalizado sin premio	0	0	OK
+111	Precargado finalizado después de la carga paga premio	1200.00	1200.00	OK
+112	Diferencia acumulada no desborda int	true	true	OK
+113	Calendario fecha-hora-sede mixto	[A-E6, B-C1, A-E1]	[A-E6, B-C1, A-E1]	OK
+114	Calendario prioriza fecha sobre hora	B-C1	B-C1	OK
+115	Calendario de torneo	2	2	OK
+116	Calendario de participante	1	1	OK
+117	Recorrido no permite eliminar	true	true	OK
+118	Entrada no numérica se recupera	7	7	OK
+119	Fecha mal formada se recupera	2026-12-01	2026-12-01	OK
